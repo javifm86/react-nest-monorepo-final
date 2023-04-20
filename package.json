@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "predistribute:api:frontend": "rimraf frontend/src/api",
+    "distribute:api:frontend": "cpx ./common/api/**/* ./frontend/src/api",
+    "predistribute:api:backend": "rimraf backend/src/api",
+    "distribute:api:backend": "cpx ./common/api/**/* ./backend/src/api",
+    "distribute:api": "npm-run-all distribute:api:frontend distribute:api:backend"
+  },
+  "devDependencies": {
+    "cpx": "^1.5.0",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^5.0.0"
+  }
+}
