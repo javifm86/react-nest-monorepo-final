@@ -16,8 +16,9 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "strictPropertyInitialization":false
+    "strictPropertyInitialization":false,
+    "types": ["vite/client", "jest", "node", "@testing-library/jest-dom"],
   },
-  "include": ["src"],
+  "include": ["src", "./__tests__", "./jest.config.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
