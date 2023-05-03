@@ -1,0 +1,20 @@
+{
+  "nonGlobalStepDefinitions": true,
+  "stepDefinitions": "steps/**/*.ts",
+  "filterSpecs": true,
+  "omitFiltered": true,
+  "messages": {
+    "enabled": true,
+    "output": "report/cucumber-messages.ndjson"
+  },
+  "html": {
+    "enabled": true,
+    "output": "report/html/index.html"
+  },
+  "json": {
+    "enabled": true,
+    "output": "report/json/cucumber-report.json",
+    "formatter": "ts-node-esm",
+    "args": ["./report.mts"]
+  }
+}
